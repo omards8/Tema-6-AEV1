@@ -8,12 +8,12 @@ while [ $lin -le $totLin ]; do
 	mes=`echo $res | awk '{print $3}'`
 	dia=`echo $res | awk '{print $2}'`
 	usu=`echo $res | awk '{print $1}'`
-	if [ $mes_aux = $mes ];then
+	if [ $mes_aux = $mes ]; then
 		echo $dia
-		con=$(($con+1))
+		con=$(( $con + 1 ))
 	fi
-	lin=$(($lin+1))
+	lin=$(( $lin + 1 ))
 done
-if [ $con -eq 0 ];then
+if [ $con -eq 0 ]; then
 	echo "0"
 fi
