@@ -14,5 +14,5 @@ while [ $con -lt $totLin ]; do
 	if [ $mes = $mes_aux ] && [ $dia = $dia_aux ]; then
 		echo $usu
 	fi
-	con=$(($con + 1))
+	con=$(( $con + 1 ))
 done
